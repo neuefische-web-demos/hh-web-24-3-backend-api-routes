@@ -1,4 +1,4 @@
-// was definieren wir hier? Stellver. für database
+// Stellver. für database
 import { jokes } from '@/lib/data';
 
 export default function handler(request, response) {
@@ -7,7 +7,7 @@ export default function handler(request, response) {
   console.log('HTTP REQUEST URL --->', request.url);
 
   if (request.method === 'GET') {
-    // demnächst die Jokes aus der echte Databse finden und holen.
+    // demnächst die Jokes aus der echten Databse finden und holen.
     response.status(200).json(jokes);
     return;
   } else {
